@@ -1,19 +1,19 @@
 Summary:	Utility to create modern online books from Markdown files
 Summary(pl.UTF-8):	Narzędzie do tworzenia nowoczesnych książek online z plików Markdown
 Name:		mdbook
-Version:	0.4.19
+Version:	0.4.28
 Release:	1
 License:	MPL v2.0
 Group:		Applications/Text
 #Source0Download: https://github.com/rust-lang/mdBook/releases
 Source0:	https://github.com/rust-lang/mdBook/archive/v%{version}/mdBook-%{version}.tar.gz
-# Source0-md5:	84821836f62e4366f230e0e402efd028
+# Source0-md5:	7aecf8a79ef1867773a0df2ab3999e78
 # cd mdBook-%{version}
 # cargo vendor
 # cd ..
 # tar cJf mdBook-vendor-%{version}.tar.xz mdBook-%{version}/vendor
 Source1:	mdBook-vendor-%{version}.tar.xz
-# Source1-md5:	1949b8e475c20a17d924b3efdca9cb18
+# Source1-md5:	608d6d6eae1d643792be7bb601080933
 URL:		https://github.com/rust-lang/mdBook
 BuildRequires:	cargo
 BuildRequires:	rpmbuild(macros) >= 2.004
