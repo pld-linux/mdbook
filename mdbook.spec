@@ -16,10 +16,12 @@ Source1:	mdBook-vendor-%{version}.tar.xz
 # Source1-md5:	cfe78a32dcea334b01472abdcb0c3b58
 URL:		https://github.com/rust-lang/mdBook
 BuildRequires:	cargo
-BuildRequires:	rpmbuild(macros) >= 2.004
+BuildRequires:	rpmbuild(macros) >= 2.050
 BuildRequires:	rust
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
+%{?rust_req}
+ExclusiveArch:	%{rust_arches}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
